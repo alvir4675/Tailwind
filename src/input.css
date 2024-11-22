@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply dark:bg-black font-inter
+    }
+
+    h1 {
+        @apply lg:text-[66px] text-[28px] pb-2 text-slate-950 dark:text-white leading-[1.4] font-black ;
+    }
+
+    h2 {
+        @apply text-[66px] text-slate-950 dark:text-white leading-[1.4] font-bold ;
+    }
+
+    h4 {
+        @apply text-[24px] text-slate-800  dark:text-white leading-7 font-bold ;
+    }
+
+    p {
+        @apply text-lg text-slate-800  dark:text-white leading-[1.4] ;
+    }
+
+    button {
+        @apply text-lg text-white  dark:text-slate-800 leading-7 font-bold bg-black dark:bg-white rounded-full px-[50px] py-5 cursor-pointer ;
+    }
+}
+
+/* @layer components {
+    .burger-bg {
+        background: url("../img/image.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+} */
